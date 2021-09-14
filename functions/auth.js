@@ -6,7 +6,7 @@ exports.handler = (event, context, callback) => {
   const authorizationURI = oauth2.authorizationCode.authorizeURL({
     redirect_uri: config.redirect_uri,
     /* Specify how your app needs to access the user’s account. http://bit.ly/intercom-scopes */
-    scope: '',
+    scope: 'view_sales',
     /* State helps mitigate CSRF attacks & Restore the previous state of your app */
     state: '',
   })
